@@ -1,0 +1,10 @@
+Propuesta Programación Web
+Nombre Alumno: Leiza Georgina Lara Ruiz
+Matricula: 1682740
+Grupo: 01
+Nombre de proyecto: Zag In All
+Objetos a vender: Artículos varios
+Tipos de usuarios:
+- Administrador: Controla el alta de nuevos productos, así como su modificación y eliminación, puede crearlos para venta o guardarlos como borradores. Proporciona y autoriza el precio de venta por objeto.
+- Usuario de página: Pueden registrarse y solicitar la compra de los artículos. Ofertan por los artículos que les interesa comprar y esperan a que el precio sea autorizado o contraofertado por el administrador. Pueden comentar y calificar los artículos que han comprado.
+- Guest: Son aquellos usuarios que no han creado una cuenta o no han iniciado sesión. Pueden entrar a ver los detalles de cada artículo, pero no pueden agregar ninguno a su carrito. Tampoco pueden comentarlos ni calificarlos. No tiene página de usuario.
