@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ZagInBuy</title><script src="JQuery 3.3.1/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="bootstrap 4.3.1/css/bootstrap.css">
+    <script src="bootstrap 4.3.1/js/bootstrap.js"></script>
+    <style>
+    	#crearCuenta{
+    		margin-right: 1%;
+    		margin-left: 1%;
+    	}
+    	#iniciarSesion{
+    		margin-right: 1%;
+    		margin-left: 1%;
+    	}
+    </style>
+    <script>
+    	$(document).ready(function(){
+    		
+    	});
+	</script>
+</head>
+<body>
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	 	<a class="navbar-brand" href="index.html">Admin</a>
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	   		<span class="navbar-toggler-icon"></span>
+	 	</button>
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link active" href="indexAdmin.html">Productos</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="borradores.html">Borradores</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="solicitudes.html">Solicitudes</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="ventas.html">Ventas</a>
+	      		</li>
+	    	</ul>
+	    	<ul class="navbar-nav">
+	    		<li class="nav-item">
+	        		<a class="nav-link" href="index.html">Salir</a>
+	      		</li>
+	    	</ul>
+	  	</div>
+	</nav>
+
+	<h3 class="ml-5 mr-5 mt-3 mb-3">Agregar producto</h3>
+
+	<form class="ml-5 mr-5 mt-3 mb-3">
+		<div class="form-group">
+    		<label for="nombreProd">Nombre del producto</label>
+    		<input type="text" class="form-control" id="nombreProd" placeholder="Nombre">
+		</div>
+		<div class="form-group">
+    		<label for="descProd">Descripci&oacuten</label>
+    		<textarea class="form-control" id="descProd" rows="3" placeholder="Detalles del producto"></textarea>
+		</div>
+		<div class="form-group">
+    		<label for="uniProd">Unidades</label>
+    		<input type="text" class="form-control" id="uniProd" placeholder="0">
+		</div>
+		<div class="form-row">
+			<div class="col">
+				<div class="form-group" align="center">
+					<label for="File1">Imagen 1</label>
+					<input type="file" class="form-control-file" id="File1">
+					<img src="slide.jpg" alt="Imagen 1" width="300" class="mt-3 mb-3">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group" align="center">
+					<label for="File2">Imagen 2</label>
+					<input type="file" class="form-control-file" id="File2">
+					<img src="slide.jpg" alt="Imagen 2" width="300" class="mt-3 mb-3">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group" align="center">
+					<label for="File3">Imagen 3</label>
+					<input type="file" class="form-control-file" id="File3">
+					<img src="slide.jpg" alt="Imagen 3" width="300" class="mt-3 mb-3">
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+    		<label for="vidProd">Video</label>
+    		<input type="file" class="form-control-file" id="vidProd">
+    		<video src="" poster="slide.jpg" width="500" class="mt-3"></video>
+		</div>
+		<div class="form-group">
+			<label for="categProd">Categoria</label>
+			<select class="form-control" name="categCombo" id="categProd">
+				<option value="alimentos"> Alimentos y Bebidas</option>
+		  		<option value="animales"> Animales y Mascotas</option>
+		  		<option value="belleza"> Belleza</option>
+				<option value="deportes"> Deportes</option>
+				<option value="electrodomesticos"> Electrodomesticos</option>
+		  		<option value="electronica"> Electronica</option>
+		  		<option value="hogar"> Hogar</option>
+		  		<option value="musica"> Musica</option>
+		  		<option value="juegos"> Juegos</option>
+		  		<option value="libros"> Libros</option>
+		  		<option value="refacciones"> Refacciones</option>
+		  		<option value="ropa"> Ropa</option>
+		  		<option value="software"> Software</option>
+		  		<option value="videojuegos"> Videojuegos</option>
+		  		<option value="otros"> Otros</option> 
+			</select> 
+		</div>
+		<div class="form-group">
+			<label for="estadoProd">Guardar como borrador o publicar el producto:</label>
+			<select class="form-control" name="estadoCombo" id="estadoProd">
+				<option value="borrador"> Guardar como borrador</option>
+				<option value="publicar"> Publicar</option>
+			</select> 
+		</div>
+		<div class="form-group mt-2 mb-4" style="float: right;">
+			<button type="button" class="btn btn-outline-success mr-3">Cancelar</button>
+			<button type="submit" class="btn btn-success">Agregar producto</button>
+		</div>
+	</form>
+
+</body>
+</html>
